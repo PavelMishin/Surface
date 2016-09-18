@@ -1,0 +1,392 @@
+@media screen and (min-width: 768px) {
+    @img-adaptive: '../img/768/';
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .header {
+        background: url("@{img-adaptive}header-bg.jpg") top center no-repeat;
+        background-size: cover;
+        min-height: 96rem;
+    }
+    
+    .header__top {
+        justify-content: space-between;
+        padding-top: 5.2rem;
+        padding-bottom: 18.8rem;
+    }
+    .header__logo {
+        width: 18.9rem;
+        height: 3.3rem;
+        background-size: cover;
+        
+        h1 {
+            display: none;
+        }
+    }
+    .header__target-group {
+        display: inline-block;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 3.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+    }
+    
+    .slogan {
+        width: 590/768*100%;
+    }
+    
+    .header__slogan {
+        font-size: 6.4rem;
+        line-height: 1;
+        letter-spacing: .24rem;
+        
+        &--right {
+            width: 48rem;
+            line-height: 7rem;
+        }
+    }
+    
+    .line1 {
+        width: 25.2rem;
+        height: 31.7rem;
+        top: -4.4rem;
+        left: 230/768*100%;
+        background: url("@{img-adaptive}line1.svg") no-repeat;
+        background-size: contain;
+        z-index: 0;
+    }
+    
+    .header__links {
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    
+    .sport {
+        display: flex;
+        justify-content: space-between;
+        width: 666/768*100%;
+        margin-top: 0;
+        margin-bottom: 11.5rem;
+        .sport__flex--top {
+            width: 378/666*100%;
+            margin-bottom: 0;
+        }
+        
+        .sport__flex--bottom {
+            justify-content: space-between;
+            width: 226/666*100%;
+            padding-left: 0;
+        }
+        
+        .sport__link a {     
+            font-size: 1.6rem;
+        }
+    }
+    
+    
+    .app {
+        width: 65.2rem;
+    }
+    
+    .app__button {
+        width: 31.1rem;
+        height: 7.7rem;
+        border-radius: 4rem;
+        box-shadow: 0.8rem 1.39rem 2.4rem @dark-blue;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        padding-top: 2.5rem;
+    }
+    
+    .app__button--apple {
+        padding-left: 10.5rem;
+        background: url("@{img-adaptive}icon-apple.png") 4.3rem 1.9rem no-repeat, @violet;
+        margin-right: 3rem;
+    }
+    
+    .app__button--google {
+        padding-left: 12.6rem;
+        background: url("@{img-adaptive}icon-google.png") 6.4rem 1.9rem no-repeat, @violet;
+    }
+    
+    .slider__header {
+        font-size: 9rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 7.4rem;
+        margin-left: 29rem;
+        line-height: 1;
+    }
+    
+    .slider--1 .crosses {
+        top: 0.5rem;
+        left: 29/768*100%;
+    }
+    
+    .slider--2 .crosses {
+        top: 3rem;
+        right: 198/768*100%;
+        left: auto;
+    }
+    
+    .footballer {
+        position: absolute;
+        width: 33.5rem;
+        height: 69.9rem;
+        top: 2.4rem;
+        left: 0;//70/320*100%;
+        background: url("@{img-adaptive}footballer.png") no-repeat;
+    }
+    
+    .player {
+        width: 43.6rem;
+        height: 56.5rem;
+        top: -4rem;
+        left: auto;
+        right: 0;
+        transform: none;
+        background: url("@{img-adaptive}player.png") no-repeat;
+    }
+    
+    .line2 {
+        width: 28.6rem;
+        height: 31.7rem;
+        top: 3.8rem;
+        left: -4rem;
+        background: url("@{img-adaptive}line2.svg") no-repeat;
+    }
+    
+    .line3 {
+        width: 27.2rem;
+        height: 31.7rem;
+        top: 8rem;
+        left: auto;
+        right: 1%;
+        background: url("@{img-adaptive}line3.svg") no-repeat;
+    }
+    
+    .line4 {
+        display: none;
+    }
+    
+    
+    .slides {
+        flex-direction: column;
+        
+        .slider__slide {
+            min-height: 19.5rem;
+        }
+    }
+    
+    .slider__slide {
+        width: 422/768*100%;
+        padding-top: 4rem;
+        padding-left: 290/768*100%;
+        padding-right: 56/768*100%;
+    }
+    
+    .slider--2 {
+        .slider__slide {
+            padding-left: 30/768*100%;
+            padding-right: 316/768*100%;
+        }
+        .slider__header {
+            margin-left: 3.8rem;
+        }
+    }
+    
+    .slide__number {
+        font-size: 1.8rem;
+        bottom: 0.9rem;
+        
+        &:after {
+            width: 1.9rem;
+            height: 0.5rem;
+            bottom: -0.6rem;
+            border-radius: 0.2rem;
+        }
+    }
+    
+    .slide__header {
+        font-size: 3.6rem;
+    }
+    
+    .slide__text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: 0.05rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .slider__controls {
+        display: none;
+    }
+    
+    
+    .slider__slide.slider__slide {
+        &--white {
+            background-color: white;
+            min-height: auto;
+        }
+        
+        &--violet {
+            background-color: @violet;
+            min-height: 16.5rem;
+        }
+        
+        &--blue {
+            background-color: @dark-blue-bg;
+            min-height: 16.5rem;
+        }
+    }
+    
+    .slide__number {
+        &--blue {
+            color: @dark-blue;
+            &:after {
+                background-color: @pale;
+            }
+        }
+        &--violet {
+            color: @violet4;
+            &:after {
+                background-color: @pale;
+            }
+        }
+    }
+    
+    .slide__text--white {
+        color: white;
+    }
+    
+    .appeal__bg {
+        height: 58.4rem;
+        
+        &--1 {
+            background: url("@{img-adaptive}active.jpg") center no-repeat;
+        }
+        
+        &--2 {
+            background: url("@{img-adaptive}find-contact.jpg") top center no-repeat;
+        }
+        
+        &--3 {
+            background: url("@{img-adaptive}work-it.jpg") top center no-repeat;
+        }
+        
+    }
+    
+    .appeal__rectangle {
+        bottom: -3.6rem;
+        left: 33/768*100%;
+        width: 11.6rem;
+        height: 11.6rem;
+    }
+    
+    .appeal__number {
+        font-size: 2.4rem;
+        
+        &:after {
+            left: 0.2rem;
+            bottom: -0.9rem;
+            width: 2.2rem;
+            height: 0.5rem;
+            border-radius: 0.2rem;
+        }
+    }
+    
+    .appeal__main {
+        padding: 8.3rem 8rem 6.3rem 3.5rem;
+    }
+    
+    .appeal__header {
+        font-size: 9rem;
+    }
+    
+    .appeal__text {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-bottom: 3.3rem;
+    }
+    
+    .footer {
+        background: url("@{img-adaptive}footer-bg.jpg") top center no-repeat;
+        background-size: cover;
+        height: 95.6rem;
+    }
+    
+    .footer__head {
+        padding-top: 34rem;
+        margin-bottom: 19.5rem;
+    }
+    
+    .app-logo {
+        width: 13rem;
+        height: 13.7rem;
+        top: 12.8rem;
+        margin-left: -6.5rem;
+        background: url("@{img-adaptive}app-logo.png") no-repeat;
+    }
+    
+    .footer__header {
+        width: 67rem;
+        
+        h3{
+            font-size: 8rem;
+            letter-spacing: 0.2rem;
+        }
+        .line5 {
+            width: 13.6rem;
+            height: 15.7rem;
+            background: url("@{img-adaptive}line5.svg") no-repeat;
+        }
+        
+        .line6 {
+            width: 27.5rem;
+            height: 31.4rem;
+            top: -9rem;
+            right: 11rem;
+            background: url("@{img-adaptive}line6.svg") no-repeat;
+        }
+    }
+    
+    .footer__sub-header {
+        font-size: 3.6rem;
+        letter-spacing: 0.0rem;
+    }
+    
+    .footer__bottom {
+        height: 9.2rem;
+    }
+    
+    .footer__bottom:after {
+        height: 9.2rem;
+    }
+    
+    .social {
+        width: 13.7rem;
+        height: 2.7rem;
+        margin-top: 3.5rem;
+    }
+    
+    .social__icon {
+        width: 2.7rem;
+        height: 2.7rem;
+        
+        &--fb {
+            background: url("@{img}facebook.svg") no-repeat;
+        }
+        
+        &--tw {
+            background: url("@{img}twitter.svg") no-repeat;
+        }
+        &--in {
+            background: url("@{img}instagram.svg") no-repeat;
+        }
+    }
+}

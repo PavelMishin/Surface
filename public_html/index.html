@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__top">
+            <div class="header__top flex-container">
                 <div class="logo header__logo"><h1>Surface</h1></div>
                 <span class="header__target-group">for athlets and coaches</span>
             </div>
@@ -18,24 +18,24 @@
                 <h2 class="header__slogan header__slogan--right">PLAY COLLEGE SPORTS</h2>
                 <div class="line line1"></div>
             </div>
-            <div class="flex-container header__flex-container">
+            <div class="header__links flex-container">
                 <nav class="sport">
                     <ul class="flex-container  sport__flex--top">
-                        <li class="sport__link"><a href="#">Football</a></li>
-                        <li class="sport__link"><a href="#">Basketball</a></li>
-                        <li class="sport__link"><a href="#">Baseball</a></li>
+                        <li class="sport__link"><a href="#Football">Football</a></li>
+                        <li class="sport__link"><a href="#Basketball">Basketball</a></li>
+                        <li class="sport__link"><a href="#Baseball">Baseball</a></li>
                     </ul>
                     <ul class="flex-container  sport__flex--bottom">
-                        <li class="sport__link"><a href="#">Soccer</a></li>
-                        <li class="sport__link"><a href="#">Ice hockey</a></li>
+                        <li class="sport__link"><a href="#Soccer">Soccer</a></li>
+                        <li class="sport__link"><a href="#Icehockey">Ice hockey</a></li>
                     </ul>
                 </nav>
                 <div class="app header__app">
-                    <a class="app__button app__button--apple">
+                    <a href="http://www.apple.com/" class="app__button app__button--apple">
                         <span class="app__appeal">download on the</span><br>
                         <span class="app__brand">app store</span>
                     </a>
-                    <a class="app__button app__button--google">
+                    <a href="https://play.google.com" class="app__button app__button--google">
                         <span class="app__appeal">get it on</span><br>
                         <span class="app__brand">google play</span>
                     </a>
@@ -45,8 +45,8 @@
         
         <main>
             <section class="sliders">
-                <div class="sliders__slider slider slider1">
-                    <div class="slider1-bg">
+                <div class="slider slider--1 sliders__slider">
+                    <div class="slider-bg">
                         <div class="footballer"></div>
                         <div class="crosses">
                             <div class="cross"></div>
@@ -56,18 +56,18 @@
                     </div>
                     <h2 class="slider__header">ATHLETS</h2>
                     <div class="slides flex-container">
-                        <div class="slider1__slide slide slider__slide1">
+                        <div class="slider__slide slider__slide--white">
                             <span class="slide__number">01</span>
                             <h3 class="slide__header">Connection</h3>
                             <p class="slide__text">Connect with coaches directly, you can ping coaches to view profile.</p>
                         </div>
-                        <div class="slider1__slide slide slider__slide2">
+                        <div class="slider__slide">
                             <span class="slide__number">02</span>
                             <h3 class="slide__header">Collaboration</h3>
                             <p class="slide__text">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
                         </div>
-                        <div class="slider1__slide slide slider__slide3">
-                            <span class="slide__number slide__number--3">03</span>
+                        <div class="slider__slide slider__slide--violet">
+                            <span class="slide__number slide__number--blue">03</span>
                             <h3 class="slide__header">Growth</h3>
                             <p class="slide__text">Resources and tools for you to get better as a student Athelte. 
                                 Access to training classes, tutor sessions, etc </p>
@@ -79,8 +79,8 @@
                         <div class="slider__control-item"></div>
                     </div>
                 </div>
-                <div class="sliders__slider slider slider2">
-                    <div class="slider2-bg">
+                <div class="slider slider--2 sliders__slider">
+                    <div class="slider-bg">
                         <div class="player"></div>
                         <div class="crosses">
                             <div class="cross"></div>
@@ -92,22 +92,22 @@
                     </div>
                     <h2 class="slider__header">Players</h2>
                     <div class="slides flex-container">
-                        <div class="slider2__slide slide slider__slide1">
+                        <div class="slider__slide slider__slide--white">
                             <span class=" slide__number">01</span>
                             <h3 class="slide__header">Connection</h3>
                             <p class="slide__text">Connect with talented athlete directly, you can watch their 
                                 skills through video showreels directly from Surface 1.</p>
                         </div>
-                        <div class="slider2__slide slide slider__slide2">
+                        <div class="slider__slide">
                             <span class="slide__number">02</span>
                             <h3 class="slide__header">Collaboration</h3>
                             <p class="slide__text">Work with recruiter to increase your chances of finding
                                 talented athlete.</p>
                         </div>
-                        <div class="slider2__slide slide slider__slide3">
-                            <span class="slide__number slide__number--3">03</span>
+                        <div class="slider__slide slider__slide--blue">
+                            <span class="slide__number slide__number--violet">03</span>
                             <h3 class="slide__header">Growth</h3>
-                            <p class="slide__text">Save your time, recruit proper athlets for your team.</p>
+                            <p class="slide__text slide__text--white">Save your time, recruit proper athlets for your team.</p>
                         </div>
                     </div>
                     <div class="slider__controls flex-container">
@@ -119,7 +119,7 @@
             </section>
             
             <section class="appeals">
-                <div class="appeals__appeal appeal flex-container">
+                <div class="appeal appeals__appeal flex-container">
                     <div class="appeal__bg appeal__bg--1">
                         <div class="appeal__rectangle">
                         <span class="number appeal__number">01</span>
@@ -132,7 +132,7 @@
                         <div class="appeal__line"></div>
                     </div>
                 </div>
-                <div class="appeals__appeal appeal flex-container">
+                <div class="appeal appeals__appeal flex-container">
                     <div class="appeal__bg appeal__bg--2">
                         <div class="appeal__rectangle">
                         <span class="number appeal__number">02</span>
@@ -145,7 +145,7 @@
                     <div class="appeal__line"></div>
                     </div>
                 </div>
-                <div class="appeals__appeal appeal flex-container">
+                <div class="appeal appeals__appeal flex-container">
                     <div class="appeal__bg appeal__bg--3">
                         <div class="appeal__rectangle">
                         <span class="number appeal__number">03</span>
@@ -165,32 +165,35 @@
         <footer class="footer">
             <div class="footer__head">
                 <div class="app-logo"></div>
-                <div class="line line5"></div>
-                <div class="line line6"></div>
-                <div class="footer__header">download app</div>
-                <div class="footer__sub-header">Show everyone what yu can do!</div>
+                <div class="footer__header">
+                    <h3>download app</h3>
+                    <div class="line line5"></div>
+                    <div class="line line6"></div>
+                </div>
+                <div class="footer__sub-header">Show everyone what you can do!</div>
             </div>
             <div class="app">
-                <a class="app__button app__button--apple">
-                    <span class="app__appeal">download on the</span>
+                <a href="http://www.apple.com/" class="app__button app__button--apple">
+                    <span class="app__appeal">download on the</span><br>
                     <span class="app__brand">app store</span>
                 </a>
-                <a class="app__button app__button--google">
-                    <span class="app__appeal">get it on</span>
+                <a href="https://play.google.com" class="app__button app__button--google">
+                    <span class="app__appeal">get it on</span><br>
                     <span class="app__brand">google play</span>
                 </a>
             </div>
             <div class="footer__bottom">
                 <div class="logo footer__logo"></div>
                 <div class="social flex-container">
-                    <span class="social__icon social__icon--fb"></span>
-                    <span class="social__icon social__icon--tw"></span>
-                    <span class="social__icon social__icon--in"></span>
+                    <a href="http://www.facebook.com" class="social__icon social__icon--fb"></a>
+                    <a href="http://www.twitter.com" class="social__icon social__icon--tw"></a>
+                    <a href="http://www.instagram.com" class="social__icon social__icon--in"></a>
                 </div>
                 <div class="footer__links">Contact Us | Terms & Conditions</div>
             </div>
         </footer>
         <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery.touchSwipe.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
