@@ -13,11 +13,14 @@
     padding: 3.9rem 2rem 13.8rem 2rem;
 }
 
+.logo {
+    background: url("@{img}logo.svg") center no-repeat;
+    background-size: contain;
+}
+
 .header__logo {
     width: 13.7rem;
     height: 2.4rem;
-    background: url("@{img}logo.svg") center no-repeat;
-    background-size: contain;
     
     h1 {
         display: none;
@@ -93,9 +96,18 @@
         display: inline-block;  
         a {
             color: @violet-font;
-            font-size: 3.6vw;//1.2rem;
+            font-size: 3.6vw;;
             font-weight: 300;
             text-transform: uppercase;
+            
+            &:hover {
+                color: lighten(@violet-font, 10%);
+                transition: background-color .2s;
+            }
+            
+            &:active {
+                color: lighten(@violet-font, 20%);
+            }
         }
     }
 }
@@ -119,6 +131,15 @@
     text-transform: uppercase;
     padding-top: 1rem;
     letter-spacing: 0.05rem;
+    
+    &:hover {
+        background-color: darken(@violet, 10%);
+        transition: background-color .2s;
+    }
+    
+    &:active {
+        background-color: darken(@violet, 20%);
+    }
     
     .app__appeal {
         font-weight: 300;
@@ -420,7 +441,7 @@
 
 .footer {
     position: relative;
-    background: url("@{img-adaptive}footer-bg.jpg") top center no-repeat;
+    background: url("@{img-adaptive}footer-bg.jpg") center no-repeat;
     background-size: cover;
     height: 56.8rem;
 }
@@ -498,6 +519,7 @@
     position: absolute;
     content: "";
     top: 0;
+    left: 0;
     opacity: 0.6;
     background-color: @dark-blue;
     width: 100%;
@@ -505,7 +527,7 @@
     z-index: 1;
 }
 
-.logo footer__logo,
+.logo .footer__logo,
 .footer__links {
     display: none;
 }
@@ -525,6 +547,14 @@
     height: 1.7rem;
     background-size: contain !important;
     
+    &:hover {
+        opacity: 0.8;
+        transition: opacity 0.15s;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+    
     &--fb {
         background: url("@{img}facebook.svg") no-repeat;
     }
@@ -542,7 +572,7 @@
 
 @media screen and (min-width: 480px) {
     .header__slogan--right {
-        width: 39rem;
+        width: auto;
     }
 }
 
@@ -579,3 +609,14 @@
 }
 
 @import "tablet.less";
+@import "desktop.less";
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   
+* {
+    letter-spacing: 0px;
+}
+        
+        
+    
+}

@@ -1,0 +1,366 @@
+@media screen and (min-width: 1280px) {
+    @img-adaptive: '../img/1920/';
+    
+    .header {
+        background: url("@{img-adaptive}header-bg.jpg") top center no-repeat;
+        background-size: cover;
+    }
+    
+    .header__top {
+        padding: 5.4rem 196/1920*100% 23rem 193/1920*100%;
+    }
+    
+    .header__slogan--right {
+        width: auto;
+    }
+    
+    .sport {
+        width: 590/768*100%;
+        
+        & &__link a {
+            font-size: 2vw;
+        }
+    }
+    
+    .appeal {
+        flex-direction: row;
+        
+        > * {
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+            .appeal__rectangle {
+                left: 0;
+            }
+        }
+    }
+    
+    .appeal__bg {
+        height: 40vw;
+    }
+    
+    .appeal__rectangle {
+        bottom: 50%;
+        left: 100%;
+        transform: translateX(-50%);
+    }
+    
+    .appeal__main {
+        padding-left: 6.6vw;
+    }
+    
+    .footer {
+        background: url("@{img-adaptive}footer-bg.jpg") top center no-repeat;
+        background-size: cover;
+        height: 95.9rem;
+    }
+    
+    .footer__logo {
+        position: relative;
+        display: block;
+        width: 17.2rem;
+        height: 3rem;
+        margin-top: 3.4rem;
+        margin-left: 50/1920*100%;
+        z-index: 2;
+    }
+    
+    .footer__links {
+        position: relative;
+        display: block;
+        margin-top: 4rem;
+        margin-right: 60/1920*100%;
+        font-size: 1.4em;
+        color: white;
+        z-index: 2;
+        
+        a:hover {
+            color: lighten(@violet, 10%);
+            transition: color 0.15s;
+        }
+        
+        a:active {
+            color: lighten(@violet, 30%);
+        }
+    }
+}
+
+@media screen and (min-width: 1423px) {
+    @img-adaptive: '../img/1920/';
+    
+    .slogan {
+        width: 1530/1920*100%;
+    }
+    
+    .header__slogan {
+        font-size: 7.5rem;
+    }
+    
+    .header__slogan--left {
+        margin-bottom: 1rem;
+    }
+    
+    .line1 {
+        top: -7.7rem;
+        left: 400/1530*100%;
+    }
+    
+    .header__links {
+        margin-top: 1rem;
+        
+    }
+    
+    .sport {
+        width: 40%;
+        margin-left: auto;
+        margin-right: 200/1920*100%;
+        margin-bottom: 18rem;
+        
+        .sport__link a {
+            font-size: 1.4rem;
+        }
+    }
+    
+    .app {
+        width: 67.2rem;
+    }
+    
+    .app__button--apple {
+        margin-right: 5rem;
+    }
+    
+    .slider__header {
+        margin-top: 10rem;
+        margin-left: 1009/1920*100%;
+    }
+    
+    .slider__slide {
+        padding-left: 1006/1920*100%;
+        padding-right: 222/1920*100%;
+        width: 692/1920*100%;
+    }
+    
+    .slide__text {
+        font-size: 2rem;
+        letter-spacing: .00rem;
+    }
+    
+    .slider--2 .slider__header {
+        margin-left: 238/1920*100%;
+    }
+    
+    .slider--2 .slider__slide {
+        padding-left: 238/1920*100%;
+        padding-right: 990/1920*100%;
+    }
+    
+    .slider--1 .crosses {
+        top: 4rem;
+        left: 392/1920*100%;
+    }
+    
+    .slider--2 {
+        .crosses {
+            top: 0rem;
+            right: 783/1920*100%;
+        }
+        
+        .slider-bg>.cross {
+            display: block;
+            top: 36.1rem;
+            right: 327/1920*100%;
+        }
+    }
+    
+    .footballer {
+        width: 678/1920*100%;
+        height: 95rem;
+        top: -5rem;
+        left: 320/1920*100%;
+        background: url("@{img-adaptive}footballer.png") no-repeat;
+        background-size: contain;
+    }
+    
+    .player {
+        width: 991/1920*100%;
+        height: 81.5rem;
+        top: -10rem;
+        left: auto;
+        right: 125/1920*100%;
+        background: url("@{img-adaptive}player.png") no-repeat;
+        background-size: contain;
+    }
+    
+    .line2 {
+        width: 580/1920*100%;
+        height: 66.8rem;
+        top: -3.8rem;
+        left: 303/1920*100%;
+        background: url("@{img-adaptive}line2.svg") no-repeat;
+        background-size: contain;
+    }
+    
+    .line3 {
+        width: 277/1920*100%;
+        height: 32.1rem;
+        top: 23rem;
+        right: 656/1920*100%;
+        background: url("@{img-adaptive}line3.svg") no-repeat;
+        background-size: contain;
+    }
+    
+    .line4 {
+        display: block;
+        width: 272/1920*100%;
+        height: 31.9rem;
+        top: -7rem;
+        right: 187/1920*100%;
+        left: auto;
+        background: url("@{img-adaptive}line4.svg") no-repeat;
+        background-size: contain;
+    }
+    
+    .appeal__bg {
+        height: 58.4rem;
+        
+        &--1 {
+            background: url("@{img-adaptive}active.jpg") center no-repeat;
+        }
+        
+        &--2 {
+            background: url("@{img-adaptive}find-contact.jpg") top center no-repeat;
+        }
+        
+        &--3 {
+            background: url("@{img-adaptive}work-it.jpg") top center no-repeat;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1903px) {
+    @img-adaptive: '../img/1920/';
+    
+    .header__top {
+        padding-top: 5.4rem;
+        padding-bottom: 30rem;
+    }
+    
+    .header__slogan {
+        font-size: 9rem;
+        line-height: 1;
+        letter-spacing: .4rem;
+        
+        &--left {
+            margin-bottom: 0;
+        }
+        
+        &--right {
+            position: relative;
+            line-height: 1;
+            z-index: 0;
+        }
+    }
+    
+    .line1 {
+        top: -9rem;
+        background: url("@{img-adaptive}line1.svg") no-repeat;
+        background-size: contain;
+    }
+    
+    .sport {
+        width: 567/1920*100%;
+    }
+    
+    .footballer {
+        top: -7rem;
+    }
+    
+    .player {
+        top: -14rem;
+    }
+    
+    .slider__header {
+        margin-top: 11rem;
+    }
+    
+    .slider__slide {
+        padding-top: 6rem;
+        
+        &--white {
+            padding-top: 8rem;
+        }
+        
+        &--blue,
+        &--violet {
+            padding-top: 9rem;
+        }
+    }
+    
+    .slide__text {
+        margin-bottom: 6rem;
+    }
+    
+    .appeal__bg {
+        height: 76.8rem;
+    }
+    
+    .appeal__rectangle {
+        width: 16.8rem;
+        height: 15.5rem;
+    }
+    
+    .appeal__text {
+        margin-top: 11rem;
+        margin-bottom: 8.5rem;
+        width: 50rem;
+    }
+    
+    .footer__head {
+        padding-left: 15rem;
+        padding-top: 24rem;
+        margin-bottom: 16rem;
+    }
+    
+    .app-logo {
+        top: 22.9rem;
+        left: 50.4rem;
+    }
+    
+    .footer__header {
+        width: 78rem;
+        h3 {
+            font-size: 9rem;
+        }
+        
+        .line5 {
+            left: 2.4rem;
+            top: -2rem;
+        }
+        
+        .line6 {
+            top: -10rem;
+            right: 11.5rem;
+        }
+    }
+    
+        .footer__bottom,
+        .footer__bottom:after {
+            height: 16.8rem;
+        }
+        
+        .footer__logo {
+            margin-top: 7.1rem;
+        }
+        
+        .social {
+            margin-top: 7.4rem;
+        }
+        
+        .footer__links {
+            margin-top: 7.8rem;
+        }
+}
